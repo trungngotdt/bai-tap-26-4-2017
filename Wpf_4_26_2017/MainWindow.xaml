@@ -7,6 +7,164 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Background="Brown">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>                
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Button x:Name="btn_number1"
+                        Content="1"
+                        FontSize="20"
+                        Margin="20,15,20,15">
+                </Button>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Button x:Name="btn_number2"
+                        Content="2"
+                        FontSize="20"
+                        Margin="20,15">
+                </Button>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2" >
+                <Button x:Name="btn_number3"
+                        Content="3"
+                        FontSize="20"
+                        Margin="20,15"></Button>
+            </Grid>
+            <Button Grid.Row="1" Grid.Column="0"
+                    x:Name="btn_number4"
+                    Content="4"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="0" Grid.Column="3"
+                    Content="DEL"
+                    x:Name="btn_del"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="0" Grid.Column="4"
+                    x:Name="btn_AC"
+                    Content="AC"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="1" Grid.Column="3"
+                    x:Name="btn_multiply"
+                    Content="x"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="1" Grid.Column="4"
+                    x:Name="btn_divede"
+                    Content="/"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="1" Grid.Column="1"
+                    x:Name="btn_number5"
+                    Content="5"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Column="2" Grid.Row="1"
+                    Content="6"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="2" Grid.Column="0"
+                    x:Name="btn_number7"
+                    Content="7"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="2" Grid.Column="1"
+                    x:Name="btn_number8"
+                    Content="8"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="2" Grid.Column="2"
+                    x:Name="btn_number9"
+                    Content="9"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="3" Grid.Column="0"
+                    x:Name="btn_number0"
+                    Content="0"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="3" Grid.Column="1"
+                    x:Name="btn_dot"
+                    Content="."
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="3" Grid.Column="2"
+                    x:Name="btn_OperationOpen"
+                    Content="("
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="3" Grid.Column="3"
+                    x:Name="btn_OperationClose"
+                    Content=")"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="3" Grid.Column="4"
+                    x:Name="btn_result"
+                    Content="="
+                    FontSize="20"
+                    Margin="20,15" Click="btn_result_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="3"
+                    Content="+"
+                    x:Name="btn_add"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+            <Button Grid.Row="2" Grid.Column="4"
+                    x:Name="btn_subtract"
+                    Content="-"
+                    FontSize="20"
+                    Margin="20,15"></Button>
+        </Grid>
+        <Grid Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <TextBox x:Name="txb_Input"
+                         Text="0"
+                         FontSize="20"
+                         HorizontalContentAlignment="Right"
+                         >                    
+                </TextBox>
+                
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="Input:"
+                           HorizontalAlignment="Center"
+                           FontSize="20"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <TextBlock x:Name="tebl_result"
+                           Text="0"
+                           TextAlignment="Right"                           
+                           FontSize="20"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <TextBlock Text="Output :"
+                           TextAlignment="Center"
+                           FontSize="20"></TextBlock>
+            </Grid>
+        </Grid>
         
     </Grid>
 </Window>
